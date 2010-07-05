@@ -209,7 +209,12 @@
                 if( strlen($test['login']) && strlen($test['password']) )
                 {
                     if( $test['authType'] && $settings['authConfigFile'] ){
-                        $test['script'] = generateAuthScript($test, $settings);
+    					$script = "logData\t0\n\n";
+                        $script .= generateAuthScript($test, $settings);
+    					$script .= "logData\t1\n\n";
+						$script .= "navigate\t{$test['url']}\n";
+
+						$test['script'] = $script;
 					} else {
                         $testFile .= "\r\nBasic Auth={$test['login']}:{$test['password']}\r\n";
 					}

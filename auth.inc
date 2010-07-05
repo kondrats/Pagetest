@@ -55,9 +55,6 @@ function generateAuthScript( $test, &$settings ) {
 	// Get selected auth type
     $id = $test['authType'];
     
-    // Switch of logging
-    $script = "logData\t0\n\n";
-	
     $script .= "setEventName\tCheck in\n";
     $script .= "setDOMElement\tname={$authBlocks[$id]['FormInputPassword']}\n";
 
