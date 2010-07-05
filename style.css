@@ -1,0 +1,228 @@
+
+table.configuration {
+    text-align: left;
+    padding-left: 2em;
+}
+
+table.configuration td, table.configuration th{
+    vertical-align: top;
+    padding-right: 2em;
+}
+
+table.locations td{
+    vertical-align: middle;
+    height: 1.5em;
+}
+
+#bwTable{
+    border-collapse: collapse;
+}
+
+#bwTable td{
+    padding: 0;
+}
+
+#bwTable td.label{
+    text-align: right;
+}
+
+#bwTable td.value{
+    text-align: left;
+    padding-left: 5px;
+}
+
+img{
+    border:0;
+}
+
+.backlogWarn{
+    background-color: yellow;
+}
+
+.backlogHigh{
+    background-color: red;
+}
+
+/*
+div.form {
+    width: 50em;
+    margin: 0 auto;
+}
+*/
+
+div.spacer {
+    height: 0.25em;
+    clear: both;
+}
+
+div.options {
+    display:none;
+}
+
+div.sns {
+    display:none;
+}
+
+button.expand {
+    padding:0px;
+}
+
+.indented{
+    padding-left: 50pt;
+    padding-right: 50pt;
+}
+
+h2	{font-variant: small-caps;
+	text-align: center;
+	padding: 5px;
+	background-color: #09f;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.stepname	{font-variant: small-caps;
+		font-weight: bold;}
+
+.stepcontents	{margin-left: 40px}
+
+#testhist	{margin-left: 100px;
+		font-size: small;
+		color: #666;}
+
+.greytextbutton {margin-left: 40px;
+		font-size: small;
+		color: #666;}
+
+#footer	{padding: 5px;
+	font-size: small;
+	background-color: #ccc;
+	text-align: center;}
+
+/* fancy submit button */
+.artzBtn {
+    -moz-border-radius:2.5px;
+    border-radius:2.5px;
+    cursor:hand;
+    font:normal 11px Tahoma,Arial,sans-serif !important;
+    border:solid 1px #7089A3 !important;
+    color:#022044 !important;
+    background-color:#EDF4FA;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FCFEFE,endColorStr=#D7E8F4);
+    padding:1px 5px 2px;
+    margin:0 4px;
+}
+a.artzBtn
+{
+    display:inline-block;
+    text-decoration:none;
+    padding:2px 14px 4px;
+    margin:0 4px;
+}
+
+.artzBtn:hover,.artzBtnHov
+{
+    background-color:#DAECFF;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FAFDFF,endColorStr=#8FBEE7);
+}
+.artzBtn:active,.artzBtnAct
+{
+    background-color:#EFF6FA;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#BCD6EA,endColorStr=#F8FBFD);
+}
+.def
+{
+    border:solid 1px #58B926 !important;
+    color:#04330C !important;
+    background-color:#D4F4C5;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FBFEF9,endColorStr=#BDEEA6);
+}
+.def:hover,.defHov
+{
+    background-color:#BFEBAA;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F9FEF7,endColorStr=#7BED46);
+}
+.def:active,.defAct
+{
+    background-color:#C6FFA9;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#99E576,endColorStr=#F5FCF1);
+}
+
+/* tooltips */
+.tooltip { 
+    display:none; 
+    background-color:LightGoldenRodYellow; 
+    border: 1px solid black;
+    padding:0.5em; 
+    width:40em; 
+    z-index: 3000;
+} 
+ 
+/* a .label element inside tooltip */ 
+.tooltip .label { 
+    color:yellow; 
+    width:35px; 
+} 
+ 
+.tooltip a { 
+    color:#ad4; 
+    font-size:11px; 
+    font-weight:bold; 
+}
+
+/* Tabs */
+.shadetabs{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+}
+
+.shadetabs li a{
+text-decoration: none;
+position: relative;
+z-index: 1;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+background: #E8EBF0;
+}
+
+.shadetabs li a:visited{
+color: #2d2b2b;
+}
+
+.shadetabs li a:hover{
+    color : #f00;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+top: 1px;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+background: white;
+border-bottom-color: white;
+}
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}

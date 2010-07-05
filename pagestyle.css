@@ -1,0 +1,215 @@
+div.page {
+    width:99%; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+div.content {
+    padding: 1em;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+    clear:both;
+    background: white;
+}
+
+div.header {
+    background:#000040;
+    width:100%;
+}
+
+div.alert {
+    background:red;
+    border: 1px black solid;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+div.info {
+    background: #FAFAD2;
+    border: 1px black solid;
+    text-align: center;
+    padding: 2px;
+    font-weight: normal;
+}
+
+div.info a{
+    text-decoration: none;
+}
+
+img.logo {
+    margin: 0.5em;
+	margin-top: 20px;
+    float:left;
+    border:0;
+}
+
+body {
+    background: gray;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* shared table themes */
+
+table.pretty {
+  margin-left:auto; margin-right:auto;
+  background: white;
+  border-collapse: collapse;
+  border: 0px white solid;
+}
+
+table.pretty th, table.pretty td {
+  border: 1px silver solid;
+  padding: 0.4em;
+  text-align: center;
+}
+
+table.pretty th {
+  background: gainsboro;
+}
+
+table.pretty th.empty {
+  background:white;
+  border-top:1px white solid;
+  border-left:1px white solid;
+}
+
+table.pretty th.border, table.pretty td.border {
+  border-left: 2px black solid;
+}
+
+table.pretty td.even {
+  background: whitesmoke;
+}
+
+/* optimization grades */
+
+.opt_grade_A
+{
+    background-color: PaleGreen;
+}
+.opt_grade_B
+{
+    background-color: yellow;
+}
+.opt_grade_C
+{
+    background-color: gold;
+}
+.opt_grade_D
+{
+    background-color: orange;
+}
+.opt_grade_F
+{
+    background-color: red;
+}
+
+/* tabs */
+
+#htabs {
+        float:left;
+        width:100%;
+        background:#000040;
+        font-size:93%;
+        line-height:normal;
+        border-bottom:1px solid #666;
+}
+
+#htabs ul {
+    margin:0;
+    padding:10px 10px 0 50px;
+    list-style:none;
+}
+
+#htabs li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+#htabs a {
+    float:left;
+    background:url("/images/tableft.gif") no-repeat left top;
+    margin:0;
+    padding:0 0 0 4px;
+    text-decoration:none;
+}
+
+#htabs a span {
+    float:left;
+    display:block;
+    background:url("/images/tabright.gif") no-repeat right top;
+    padding:5px 15px 4px 6px;
+    color:#666;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#htabs a span {float:none;}
+/* End IE5-Mac hack */
+
+#htabs a:hover span {
+    color:#FFF;
+}
+
+#htabs a:hover {
+    background-position:0% -42px;
+}
+
+#htabs a:hover span {
+    background-position:100% -42px;
+}
+
+#htabs #current a {
+    background-position:0% -42px;
+}
+
+#htabs #current a span {
+    background-position:100% -42px;
+}
+
+/* sub-tabs */
+#navcontainer {
+        float:left;
+        width:100%;
+        background:white;
+        clear:both;
+}
+
+ul#navlist {
+        margin: 0;
+        padding:0 0 0 50px;
+        list-style-type: none;
+        white-space: nowrap;
+}
+
+ul#navlist li {
+        float: left;
+        font-size: smaller;
+        font-weight: bold;
+        margin: 0;
+        padding: 5px 0 4px 0;
+        background-color: #f0f3f5;
+        border-top: 1px solid #e1e8ed;
+        border-bottom: 1px solid #e1e8ed;
+}
+
+#navlist a, #navlist a:link {
+        margin: 0;
+        padding: 5px 9px 4px 9px;
+        color: #95abbb;
+        border-right: 1px dashed #d1dbe3;
+        text-decoration: none;
+}
+
+ul#navlist li#active {
+        color: #95abba;
+        background-color: #dde5eb;
+}
+
+#navlist a:hover {
+        color: #7493a8;
+        background-color: #d1dbe3;
+}
